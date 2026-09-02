@@ -1,1 +1,160 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Character Counter & Word Counter | Free Online Text Tool</title><meta name="description" content="Free character counter and word counter. Count characters, words, sentences, paragraphs and repeated words. Find and replace text instantly."><meta name="robots" content="index,follow"><link rel="canonical" href="https://YOUR-DOMAIN.com/"><link rel="stylesheet" href="style.css"></head><body><header class="site-header"><div class="container nav"><a class="brand" href="./">Count<span>MyText</span></a><nav><a href="#tools">Tools</a><a href="#faq">FAQ</a><a href="about/">About</a></nav></div></header><main><section class="hero"><div class="container"><div class="eyebrow">FREE • FAST • PRIVATE</div><h1>Character Counter &<br><span>Word Counter</span></h1><p>Count characters, words, sentences, paragraphs and repeated words instantly. Use Find & Replace without uploading your text.</p><div class="hero-links"><a href="#tools">Start counting ↓</a>　•　No sign-up required</div></div></section><section class="container tool-wrap" id="tools"><div class="tool-card"><div class="toolbar-top"><div><h2>Text Counter</h2><p>Your text is processed locally in your browser.</p></div><div class="live-pill">● LIVE</div></div><textarea id="text" maxlength="5000" placeholder="Start typing or paste your text here..."></textarea><div class="limit-row"><span>Character limit: 5,000</span><span id="limit">0 / 5,000</span></div><div class="progress"><div id="progress"></div></div><div class="stats"><div class="stat"><strong id="chars">0</strong><span>Characters</span></div><div class="stat"><strong id="charsNo">0</strong><span>No spaces</span></div><div class="stat"><strong id="words">0</strong><span>Words</span></div><div class="stat"><strong id="sentences">0</strong><span>Sentences</span></div><div class="stat"><strong id="paragraphs">0</strong><span>Paragraphs</span></div><div class="stat"><strong id="letters">0</strong><span>Letters</span></div></div><div class="panel"><div class="panel-heading"><div><h3>🔎 Find & Replace</h3><p>Search your text and replace one or every occurrence.</p></div><span id="replaceStatus"></span></div><div class="find-grid"><input id="find" placeholder="Find text"><input id="replace" placeholder="Replace with"></div><div class="actions"><button id="findBtn" class="secondary">Find</button><button id="replaceBtn" class="secondary">Replace</button><button id="replaceAllBtn" class="primary">Replace All</button></div></div><div class="panel"><div class="panel-heading"><div><h3>🔁 Repeated Words</h3><p>Words used two or more times, ranked by frequency.</p></div></div><div id="repeatList" class="repeat-list">Repeated words will appear here.</div></div><div class="secondary-stats"><div><span>Estimated reading time</span><strong id="reading">0 sec</strong></div><div><span>Average words / sentence</span><strong id="average">0</strong></div></div><button id="clear" class="clear">Clear Text</button></div></section><section class="container content"><div class="section-label">POPULAR TOOLS</div><h2>Free text tools for everyday writing.</h2><div class="tool-grid"><a class="tool-link" href="character-counter/"><b>Character Counter</b><p>Count characters with and without spaces.</p></a><a class="tool-link" href="word-counter/"><b>Word Counter</b><p>Count words quickly and accurately.</p></a><a class="tool-link" href="repeated-word-counter/"><b>Repeated Word Counter</b><p>Find frequently repeated words.</p></a><a class="tool-link" href="find-and-replace/"><b>Find & Replace</b><p>Search and replace text instantly.</p></a></div></section><section class="container content faq" id="faq"><div class="section-label">FAQ</div><h2>Frequently asked questions</h2><details><summary>What is a character counter?</summary><p>A character counter tells you how many characters are in a piece of text. It is useful for social posts, titles, applications and forms with character limits.</p></details><details><summary>Does the counter include spaces?</summary><p>Yes. The main character count includes spaces, while a separate statistic excludes whitespace.</p></details><details><summary>Is my text uploaded or stored?</summary><p>The current tool processes your text in the browser and does not require an account.</p></details></section></main><footer class="site-footer"><div class="container footer-inner"><span>© 2026 CountMyText</span><div class="footer-links"><a href="character-counter/">Character Counter</a><a href="word-counter/">Word Counter</a><a href="repeated-word-counter/">Repeated Word Counter</a><a href="find-and-replace/">Find & Replace</a><a href="about/">About</a><a href="privacy/">Privacy</a></div></div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CountMyText — Character Counter & Word Counter</title>
+<meta name="description" content="Free character counter, word counter, repeated word finder and Find & Replace tool. Change text case, font, size and theme instantly.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://YOUR-DOMAIN.com/">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-ink">
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="./">Count<span>MyText</span></a>
+    <nav>
+      <a href="#tools">Tool</a>
+      <a href="#features">Features</a>
+      <a href="#faq">FAQ</a>
+      <a href="about/">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="eyebrow">FREE • FAST • PRIVATE</div>
+    <h1>Write. Count. <span>Perfect.</span></h1>
+    <p>Character and word counting with smart text editing, case conversion, font controls, themes and Find & Replace.</p>
+  </div>
+</section>
+
+<section class="container tool-wrap" id="tools">
+  <div class="tool-card">
+    <div class="toolbar-top">
+      <div>
+        <h2>Text Counter</h2>
+        <p>Everything runs locally in your browser.</p>
+      </div>
+      <div class="live-pill">● LIVE</div>
+    </div>
+
+    <div class="editor-toolbar">
+      <div class="toolbar-group">
+        <span class="tool-label">Theme</span>
+        <button class="theme-btn active" data-theme="ink" title="Ink & Paper">1</button>
+        <button class="theme-btn" data-theme="graphite" title="Graphite">2</button>
+        <button class="theme-btn" data-theme="newspaper" title="Newspaper">3</button>
+        <button class="theme-btn" data-theme="mono" title="Mono">4</button>
+        <button class="theme-btn" data-theme="blueprint" title="Blueprint">5</button>
+      </div>
+
+      <div class="toolbar-group">
+        <label class="tool-label" for="fontSelect">Font</label>
+        <select id="fontSelect" class="compact-select">
+          <option value="Inter">Inter</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Arial">Arial</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Courier New">Courier New</option>
+          <option value="Trebuchet MS">Trebuchet MS</option>
+          <option value="Times New Roman">Times New Roman</option>
+          <option value="system-ui">System</option>
+        </select>
+      </div>
+
+      <div class="toolbar-group size-group">
+        <label class="tool-label" for="fontSize">Size</label>
+        <input id="fontSize" type="range" min="12" max="30" value="17">
+        <output id="fontSizeValue">17px</output>
+      </div>
+    </div>
+
+    <div class="case-toolbar">
+      <span class="tool-label">Case</span>
+      <button class="case-btn" data-case="upper">UPPERCASE</button>
+      <button class="case-btn" data-case="lower">lowercase</button>
+      <button class="case-btn" data-case="title">Title Case</button>
+      <button class="case-btn" data-case="sentence">Sentence case</button>
+    </div>
+
+    <div class="editor-shell">
+      <div id="text" class="text-editor" contenteditable="true" role="textbox" aria-multiline="true"
+           data-placeholder="Start typing or paste your text here..."></div>
+    </div>
+
+    <div class="limit-row"><span>Character limit: 5,000</span><span id="limit">0 / 5,000</span></div>
+    <div class="progress"><div id="progress"></div></div>
+
+    <div class="stats">
+      <div class="stat"><strong id="chars">0</strong><span>Characters</span></div>
+      <div class="stat"><strong id="charsNo">0</strong><span>No spaces</span></div>
+      <div class="stat"><strong id="words">0</strong><span>Words</span></div>
+      <div class="stat"><strong id="sentences">0</strong><span>Sentences</span></div>
+      <div class="stat"><strong id="paragraphs">0</strong><span>Paragraphs</span></div>
+      <div class="stat"><strong id="letters">0</strong><span>Letters</span></div>
+    </div>
+
+    <div class="panel find-panel">
+      <div class="panel-heading">
+        <div><h3>🔎 Find & Replace</h3><p>Find matches are highlighted in yellow while you edit.</p></div>
+        <span id="replaceStatus"></span>
+      </div>
+      <div class="find-grid">
+        <input id="find" placeholder="Find text" autocomplete="off">
+        <input id="replace" placeholder="Replace with" autocomplete="off">
+      </div>
+      <div class="actions">
+        <button id="findBtn" class="secondary">Find & Highlight</button>
+        <button id="replaceBtn" class="secondary">Replace</button>
+        <button id="replaceAllBtn" class="primary">Replace All</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-heading">
+        <div><h3>🔁 Repeated Words</h3><p>Words used two or more times, ranked by frequency.</p></div>
+      </div>
+      <div id="repeatList" class="repeat-list">Repeated words will appear here.</div>
+    </div>
+
+    <div class="secondary-stats">
+      <div><span>Estimated reading time</span><strong id="reading">0 sec</strong></div>
+      <div><span>Average words / sentence</span><strong id="average">0</strong></div>
+    </div>
+
+    <button id="clear" class="clear">Clear Text</button>
+  </div>
+</section>
+
+<section class="container content" id="features">
+  <div class="section-label">POPULAR TOOLS</div>
+  <h2>Free text tools for everyday writing.</h2>
+  <div class="tool-grid">
+    <a class="tool-link" href="character-counter/"><b>Character Counter</b><p>Count characters with and without spaces.</p></a>
+    <a class="tool-link" href="word-counter/"><b>Word Counter</b><p>Count words quickly and accurately.</p></a>
+    <a class="tool-link" href="repeated-word-counter/"><b>Repeated Word Counter</b><p>Find frequently repeated words.</p></a>
+    <a class="tool-link" href="find-and-replace/"><b>Find & Replace</b><p>Search and replace text instantly.</p></a>
+  </div>
+</section>
+
+<section class="container content faq" id="faq">
+  <div class="section-label">FAQ</div>
+  <h2>Frequently asked questions</h2>
+  <details><summary>What is a character counter?</summary><p>A character counter tells you how many characters are in a piece of text. It is useful for social posts, titles, applications and forms with character limits.</p></details>
+  <details><summary>Does the counter include spaces?</summary><p>Yes. The main character count includes spaces, while the separate no-spaces statistic excludes whitespace.</p></details>
+  <details><summary>Is my text uploaded or stored?</summary><p>The tool processes your text in your browser and does not require an account.</p></details>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 CountMyText</span>
+    <div class="footer-links"><a href="character-counter/">Character Counter</a><a href="word-counter/">Word Counter</a><a href="repeated-word-counter/">Repeated Word Counter</a><a href="find-and-replace/">Find & Replace</a><a href="about/">About</a><a href="privacy/">Privacy</a></div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
