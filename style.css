@@ -113,53 +113,49 @@ body.theme-newspaper {
     --border: #aaa397;
     --text: #181715;
     --muted: #625e56;
-    --highlight: #b58a22;
+    --highlight: #d4a82e;
 
-    /*
-     * Newspaper geometric texture
-     * White areas of the image blend into the paper background.
-     */
-    background-color: var(--bg);
-    background-image: url("./assets/newspaper-texture.png");
+    background-color: #dedbd0;
+
+    /* NEWSPAPER GEOMETRIC TEXTURE */
+    background-image: url("YOUR_IMAGE_HERE");
     background-repeat: repeat;
+    background-position: center top;
     background-size: 585px 610px;
-    background-blend-mode: soft-light;
-    background-attachment: fixed;
 }
 
 
-/* Header */
+/* HEADER */
 body.theme-newspaper .site-header {
-    background: rgba(238, 234, 222, 0.94);
-    border-bottom: 1px solid var(--border);
+    background: rgba(238, 234, 222, 0.96);
 }
 
 
-/* Typography */
+/* BRAND + NAV */
 body.theme-newspaper .brand,
 body.theme-newspaper nav a,
 body.theme-newspaper .hero h1 span {
-    color: var(--text);
+    color: #181715;
 }
 
 
-/* Cards / Panels */
+/* CARDS */
 body.theme-newspaper .tool-card,
 body.theme-newspaper .panel,
 body.theme-newspaper .stat,
 body.theme-newspaper .secondary-stats > div,
 body.theme-newspaper .tool-link {
     background: rgba(238, 234, 222, 0.94);
-    color: var(--text);
-    border-color: var(--border);
+    color: #181715;
+    border-color: #aaa397;
 }
 
 
-/* Editor */
+/* EDITOR */
 body.theme-newspaper .text-editor {
-    color: var(--text);
+    color: #181715;
     background: rgba(247, 244, 233, 0.96);
-    border-color: var(--border);
+    border-color: #aaa397;
 }
 
 body.theme-newspaper .text-editor:empty:before {
@@ -167,23 +163,24 @@ body.theme-newspaper .text-editor:empty:before {
 }
 
 
-/* Buttons */
+/* CONTROLS */
 body.theme-newspaper .theme-btn,
 body.theme-newspaper .case-btn,
 body.theme-newspaper .compact-select,
 body.theme-newspaper .secondary,
 body.theme-newspaper .clear {
-    color: var(--text);
-    background: rgba(222, 217, 204, 0.94);
-    border-color: var(--border);
+    color: #181715;
+    background: rgba(222, 217, 204, 0.95);
+    border-color: #aaa397;
 }
 
 
-/* Primary button */
+/* PRIMARY */
 body.theme-newspaper .primary,
 body.theme-newspaper .live-pill {
-    background: var(--text);
+    background: #181715;
     color: #fff;
+}
 }
 
 
