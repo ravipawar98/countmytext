@@ -58,17 +58,185 @@ button{min-height:40px;border:0;border-radius:9px;padding:0 13px;font-weight:800
 .site-footer{border-top:1px solid #292929;padding:20px 0;color:#888;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:15px}.footer-links{display:flex;gap:12px;flex-wrap:wrap}.footer-links a{color:#999;text-decoration:none}
 
 /* Five visual themes */
-body.theme-graphite{--bg:#161719;--panel:#202225;--card:#1a1b1d;--border:#3b3d40;--text:#f1f1f1;--muted:#a7a9ad;--highlight:#ffd83d;--texture:repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 1px,transparent 1px 8px)}
-body.theme-newspaper{--bg:#e9e6dc;--panel:#f4f1e8;--card:#faf8f0;--border:#bbb6aa;--text:#181818;--muted:#5f5b54;--highlight:#ffe45b;--texture:radial-gradient(circle at 1px 1px,rgba(0,0,0,.09) 1px,transparent 1.2px)}
-body.theme-newspaper .site-header{background:rgba(233,230,220,.94)} body.theme-newspaper .brand,body.theme-newspaper nav a,body.theme-newspaper .hero h1 span{color:#181818}
-body.theme-newspaper .tool-card,body.theme-newspaper .panel,body.theme-newspaper .stat,body.theme-newspaper .secondary-stats>div,body.theme-newspaper .tool-link{background:#f4f1e8;color:#181818;border-color:#bdb8ac}
-body.theme-newspaper .text-editor{color:#181818;background:#faf8f0}body.theme-newspaper .text-editor:empty:before{color:#777}
-body.theme-newspaper .theme-btn,body.theme-newspaper .case-btn,body.theme-newspaper .compact-select,body.theme-newspaper .secondary,body.theme-newspaper .clear{color:#181818;background:#e1ddd1;border-color:#aaa}
-body.theme-newspaper .primary,.theme-newspaper .live-pill{background:#181818;color:#fff}
-body.theme-mono{--bg:#000;--panel:#0d0d0d;--card:#090909;--border:#222;--text:#fff;--muted:#888;--highlight:#fff36a;--texture:linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px)}
-body.theme-blueprint{--bg:#07131d;--panel:#0b1b28;--card:#091722;--border:#1e4c65;--text:#e8f8ff;--muted:#88aabd;--highlight:#ffe45c;--texture:linear-gradient(rgba(120,210,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(120,210,255,.05) 1px,transparent 1px)}
-body.theme-blueprint .primary{background:#dff7ff;color:#06202c}
-body.theme-graphite .primary,body.theme-mono .primary{background:#fff;color:#111}
+/* =========================
+   FIVE VISUAL THEMES
+   ========================= */
+
+/* 1. INK & PAPER */
+body.theme-ink {
+    --bg: #17130f;
+    --panel: #211b15;
+    --card: #2a2119;
+    --border: #59483a;
+    --text: #f4ead8;
+    --muted: #b8a995;
+    --highlight: #d9a441;
+
+    --texture:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,.035) 0 1px, transparent 1.5px),
+        radial-gradient(circle at 70% 60%, rgba(255,255,255,.025) 0 1px, transparent 1.5px),
+        repeating-linear-gradient(
+            0deg,
+            rgba(255,255,255,.018) 0 1px,
+            transparent 1px 4px
+        );
+}
+
+
+/* 2. GRAPHITE */
+body.theme-graphite {
+    --bg: #101214;
+    --panel: #191c20;
+    --card: #15181b;
+    --border: #363b40;
+    --text: #eeeeee;
+    --muted: #9da3aa;
+    --highlight: #ffd43b;
+
+    --texture:
+        linear-gradient(135deg,
+            rgba(255,255,255,.035) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255,255,255,.025) 50%,
+            rgba(255,255,255,.025) 75%,
+            transparent 75%
+        );
+}
+
+
+/* 3. NEWSPAPER */
+body.theme-newspaper {
+    --bg: #dedbd0;
+    --panel: #eeeade;
+    --card: #f7f4e9;
+    --border: #aaa397;
+    --text: #181715;
+    --muted: #625e56;
+    --highlight: #d4a82e;
+
+    --texture:
+        radial-gradient(
+            circle at 1px 1px,
+            rgba(0,0,0,.13) 1px,
+            transparent 1.3px
+        );
+    
+    background-size: 5px 5px;
+}
+
+body.theme-newspaper .site-header {
+    background: rgba(238,234,222,.94);
+}
+
+body.theme-newspaper .brand,
+body.theme-newspaper nav a,
+body.theme-newspaper .hero h1 span {
+    color: #181715;
+}
+
+body.theme-newspaper .tool-card,
+body.theme-newspaper .panel,
+body.theme-newspaper .stat,
+body.theme-newspaper .secondary-stats > div,
+body.theme-newspaper .tool-link {
+    background: #eeeade;
+    color: #181715;
+    border-color: #aaa397;
+}
+
+body.theme-newspaper .text-editor {
+    color: #181715;
+    background: #f7f4e9;
+}
+
+body.theme-newspaper .text-editor:empty:before {
+    color: #777168;
+}
+
+body.theme-newspaper .theme-btn,
+body.theme-newspaper .case-btn,
+body.theme-newspaper .compact-select,
+body.theme-newspaper .secondary,
+body.theme-newspaper .clear {
+    color: #181715;
+    background: #ded9cc;
+    border-color: #aaa397;
+}
+
+body.theme-newspaper .primary,
+body.theme-newspaper .live-pill {
+    background: #181715;
+    color: #fff;
+}
+
+
+/* 4. MONO */
+body.theme-mono {
+    --bg: #050505;
+    --panel: #0d0d0d;
+    --card: #090909;
+    --border: #282828;
+    --text: #ffffff;
+    --muted: #888888;
+    --highlight: #ffffff;
+
+    --texture:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.025) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            rgba(255,255,255,.025) 1px,
+            transparent 1px
+        );
+    
+    background-size: 24px 24px;
+}
+
+body.theme-mono .primary {
+    background: #ffffff;
+    color: #000000;
+}
+
+
+/* 5. BLUEPRINT */
+body.theme-blueprint {
+    --bg: #061522;
+    --panel: #0a1d2b;
+    --card: #091a27;
+    --border: #20516a;
+    --text: #e8f8ff;
+    --muted: #86aebe;
+    --highlight: #ffe45c;
+
+    --texture:
+        linear-gradient(
+            rgba(100,210,255,.07) 1px,
+            transparent 1px
+        ),
+        linear-gradient(
+            90deg,
+            rgba(100,210,255,.07) 1px,
+            transparent 1px
+        );
+    
+    background-size: 28px 28px;
+}
+
+body.theme-blueprint .primary {
+    background: #dff7ff;
+    color: #06202c;
+}
+
+
+/* GRAPHITE + MONO BUTTON */
+body.theme-graphite .primary {
+    background: #ffffff;
+    color: #111111;
+}
+
 
 @media(max-width:900px){.stats{grid-template-columns:repeat(3,1fr)}.tool-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){
