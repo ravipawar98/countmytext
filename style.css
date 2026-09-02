@@ -113,60 +113,76 @@ body.theme-newspaper {
     --border: #aaa397;
     --text: #181715;
     --muted: #625e56;
-    --highlight: #d4a82e;
+    --highlight: #b58a22;
 
-    --texture:
-        radial-gradient(
-            circle at 1px 1px,
-            rgba(0,0,0,.13) 1px,
-            transparent 1.3px
-        );
-    
-    background-size: 5px 5px;
+    /*
+     * Newspaper geometric texture
+     * White areas of the image blend into the paper background.
+     */
+    background-color: var(--bg);
+    background-image: url("./assets/newspaper-texture.png");
+    background-repeat: repeat;
+    background-size: 585px 610px;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
 }
 
+
+/* Header */
 body.theme-newspaper .site-header {
-    background: rgba(238,234,222,.94);
+    background: rgba(238, 234, 222, 0.94);
+    border-bottom: 1px solid var(--border);
 }
 
+
+/* Typography */
 body.theme-newspaper .brand,
 body.theme-newspaper nav a,
 body.theme-newspaper .hero h1 span {
-    color: #181715;
+    color: var(--text);
 }
 
+
+/* Cards / Panels */
 body.theme-newspaper .tool-card,
 body.theme-newspaper .panel,
 body.theme-newspaper .stat,
 body.theme-newspaper .secondary-stats > div,
 body.theme-newspaper .tool-link {
-    background: #eeeade;
-    color: #181715;
-    border-color: #aaa397;
+    background: rgba(238, 234, 222, 0.94);
+    color: var(--text);
+    border-color: var(--border);
 }
 
+
+/* Editor */
 body.theme-newspaper .text-editor {
-    color: #181715;
-    background: #f7f4e9;
+    color: var(--text);
+    background: rgba(247, 244, 233, 0.96);
+    border-color: var(--border);
 }
 
 body.theme-newspaper .text-editor:empty:before {
     color: #777168;
 }
 
+
+/* Buttons */
 body.theme-newspaper .theme-btn,
 body.theme-newspaper .case-btn,
 body.theme-newspaper .compact-select,
 body.theme-newspaper .secondary,
 body.theme-newspaper .clear {
-    color: #181715;
-    background: #ded9cc;
-    border-color: #aaa397;
+    color: var(--text);
+    background: rgba(222, 217, 204, 0.94);
+    border-color: var(--border);
 }
 
+
+/* Primary button */
 body.theme-newspaper .primary,
 body.theme-newspaper .live-pill {
-    background: #181715;
+    background: var(--text);
     color: #fff;
 }
 
