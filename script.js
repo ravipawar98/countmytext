@@ -1,7 +1,7 @@
 const editor = document.getElementById("text");
 
 if (editor) {
-  const LIMIT = 5000;
+  const LIMIT = 1000000;
   const $ = id => document.getElementById(id);
   const esc = s => s.replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));
   const rex = s => s.replace(/[.*+?^${}()|[\]\\]/g,"\\$&");
